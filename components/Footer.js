@@ -18,8 +18,8 @@ const Footer = () => {
     >
       <HStack fontSize="sm" fontWeight="600">
         <Text>Created by</Text>
-        <Link href="https://github.com/hendraaagil" isExternal>
-          Hendra Agil
+        <Link href="https://github.com/seanmodd" isExternal>
+          Sean Modd
         </Link>
       </HStack>
     </VStack>
