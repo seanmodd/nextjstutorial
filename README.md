@@ -25,7 +25,7 @@
     cd next-chakra-project
     npm install
    ```
-
+ 
 3. For customizing options please see [Features](#features) section.
 
 4. Or you can click "Use this template" button above.
@@ -66,4 +66,5 @@ This project is under [MIT License](LICENSE)
 ## Credits
 
 &copy; 2021 Created by [Hendra Agil](https://github.com/hendraaagil)
+
 # nextjstutorial

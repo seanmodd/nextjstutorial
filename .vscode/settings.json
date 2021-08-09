@@ -6,5 +6,6 @@
     "activityBar.background": "#3C2929",
     "titleBar.activeBackground": "#543939",
     "titleBar.activeForeground": "#FBFAFA"
-  }
+  },
+  "editor.suggest.showStatusBar": true
 }

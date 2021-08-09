@@ -1,5 +1,11 @@
 import { useRouter } from 'next/router';
-import { Button, ButtonGroup, useColorMode } from '@chakra-ui/react';
+import {
+  Button,
+  ButtonGroup,
+  VStack,
+  HStack,
+  useColorMode,
+} from '@chakra-ui/react';
 import { FaAngleLeft, FaAngleRight, FaRegMoon, FaRegSun } from 'react-icons/fa';
 
 const Actions = ({ switchName }) => {
@@ -28,20 +34,28 @@ const Actions = ({ switchName }) => {
   if (switchName === 'First Page') {
     actions = (
       <>
-        <Button
-          leftIcon={<FaAngleLeft />}
-          onClick={() =>
-            router.push(switchName === 'Second Page' ? '/second' : '/')
-          }
-        >
-          {switchName}
-        </Button>
-        <Button
-          rightIcon={colorMode === 'light' ? <FaRegMoon /> : <FaRegSun />}
-          onClick={toggleColorMode}
-        >
-          {colorMode === 'light' ? 'Dark' : 'Light'} Mode
-        </Button>
+        <VStack>
+          <HStack>
+            <Button
+              leftIcon={<FaAngleLeft />}
+              onClick={() =>
+                router.push(switchName === 'Second Page' ? '/second' : '/')
+              }
+            >
+              {switchName}
+            </Button>
+
+            <Button
+              rightIcon={colorMode === 'light' ? <FaRegMoon /> : <FaRegSun />}
+              onClick={toggleColorMode}
+            >
+              {colorMode === 'light' ? 'Dark' : 'Light'} Mode
+            </Button>
+          </HStack>
+          <Button onClick={() => router.push('/ssg')}>
+            Learn Static-Side Generation
+          </Button>
+        </VStack>
       </>
     );
   }

@@ -9,6 +9,8 @@ const Star = () => {
       <HStack
         zIndex="docked"
         pos="fixed"
+        top="10"
+        left="10"
         py={3}
         px={4}
         bg={colorMode === 'light' ? 'gray.100' : 'gray.800'}
